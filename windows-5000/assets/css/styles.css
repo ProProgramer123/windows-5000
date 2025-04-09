@@ -1,0 +1,105 @@
+/* filepath: /workspaces/windows-5000/assets/css/styles.css */
+
+body {
+    background: linear-gradient(135deg, #C0C0C0, #A0A0A0);
+    font-family: 'MS Sans Serif', Tahoma, Geneva, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'MS Sans Serif', Tahoma, Geneva, sans-serif;
+}
+
+.window {
+    width: 300px;
+    border: 2px solid #000080;
+    background: linear-gradient(135deg, #FFFFFF, #E0E0E0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.title-bar {
+    background: linear-gradient(135deg, #000080, #0000A0);
+    color: white;
+    padding: 5px;
+    cursor: move;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-text {
+    font-weight: bold;
+}
+
+.close-button {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+    background-color: #FF5555;
+}
+
+.button {
+    background: linear-gradient(135deg, #C0C0C0, #A0A0A0);
+    border: 2px solid #000080;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 3px;
+    transition: background 0.2s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #A0A0A0, #808080);
+}
+
+.menu {
+    background: linear-gradient(135deg, #C0C0C0, #A0A0A0);
+    border: 1px solid #000080;
+    position: absolute;
+    display: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+    background-color: #A0A0A0;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    background: linear-gradient(135deg, #FFFFFF, #E0E0E0);
+    border: 1px solid #000080;
+    margin: 10px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.icon img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3px;
+}

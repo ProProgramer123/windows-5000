@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 5000</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/setup.js" defer></script>
+</head>
+<body>
+    <div class="taskbar">
+        <button class="start-button">Start</button>
+        <div class="taskbar-items">
+            <span>My Computer</span>
+            <span>Documents</span>
+            <span>Settings</span>
+        </div>
+    </div>
+    <div class="desktop">
+        <div class="window" id="setupWindow">
+            <div class="window-header">
+                <span>Setup</span>
+                <button class="close-button" onclick="closeWindow('setupWindow')">X</button>
+            </div>
+            <div class="window-content">
+                <p>Welcome to the Windows 5000 setup!</p>
+                <button onclick="startSetup()">Start Setup</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openWindow(windowId) {
+            document.getElementById(windowId).style.display = 'block';
+        }
+
+        function closeWindow(windowId) {
+            document.getElementById(windowId).style.display = 'none';
+        }
+
+        function startSetup() {
+            alert('Setup is starting...');
+            // Add setup logic here
+        }
+    </script>
+</body>
+</html>
